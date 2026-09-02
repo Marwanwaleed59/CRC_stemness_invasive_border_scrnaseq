@@ -47,3 +47,8 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Data files - too large for GitHub
+*.gz
+*.h5ad
+*.rds
