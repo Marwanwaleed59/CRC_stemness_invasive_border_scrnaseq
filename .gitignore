@@ -52,3 +52,4 @@ rsconnect/
 *.gz
 *.h5ad
 *.rds
+*.rds
