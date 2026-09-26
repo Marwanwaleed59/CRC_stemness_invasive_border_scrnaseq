@@ -59,10 +59,14 @@ library(ggplot2)
 # 3. Project folders
 # ------------------------------------------------------------
 
-project_dir <- "D:/github/CRC_stemness_invasive_border_scrnaseq/rsults/09_DEG_annotated_seurat_obj"
+# Main project folder
+project_dir <- "D:/github/CRC_stemness_invasive_border_scrnaseq"
 
-results_dir <- file.path(project_dir, "D:/github/CRC_stemness_invasive_border_scrnaseq/results")
-figures_dir <- file.path(project_dir, "D:/github/CRC_stemness_invasive_border_scrnaseq/figures")
+# Save all CSV and RDS result files here
+results_dir <- file.path(project_dir, "results")
+
+# Save figures here
+figures_dir <- file.path(project_dir, "figures")
 
 dir.create(results_dir, showWarnings = FALSE, recursive = TRUE)
 dir.create(figures_dir, showWarnings = FALSE, recursive = TRUE)
@@ -124,7 +128,6 @@ singleR_result <- SingleR(
 )
 
 # Save the complete SingleR result
-results_dir <- "D:/github/CRC_stemness_invasive_border_scrnaseq/results"
 
 saveRDS(
   singleR_result,
